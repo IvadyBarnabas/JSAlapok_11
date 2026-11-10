@@ -4,7 +4,7 @@ const kivalasztasGomb = document.getElementsByTagName("button")
 const kiIras = document.getElementsByClassName("placeholder-text")
 
 console.log(kiIras)
-kivalasztasGomb[0].addEventListener("click", function() {
+/* kivalasztasGomb[0].addEventListener("click", function() {
     const karakterNev = document.getElementsByClassName("char-name")[0].textContent
     const karakterHP = document.getElementsByClassName("char-hp")[0].textContent
     console.log(karakterNev)
@@ -27,4 +27,16 @@ kivalasztasGomb[2].addEventListener("click", function() {
     console.log(karakterHP)
     console.log(kiIras)
     kiIras[0].innerHTML = `<span class="kiIrasNev">${karakterNev}</span> <br> <span class="kiIrasHp">Életerő: ${karakterHP}HP</span> `
-})
+}) */
+
+for (let index = 0; index < kivalasztasGomb.length; index++) {
+   
+   kivalasztasGomb[index].addEventListener("click", function() {
+    const karakterNev = document.getElementsByClassName("char-name")[index].textContent
+    const karakterHP = document.getElementsByClassName("char-hp")[index].textContent
+    console.log(karakterNev)
+    console.log(karakterHP)
+    console.log(kiIras)
+    kiIras[0].innerHTML = `<span class="kiIrasNev">${karakterNev}</span> <br> <span class="kiIrasHp">Életerő: ${karakterHP}HP</span> `
+}) 
+}
