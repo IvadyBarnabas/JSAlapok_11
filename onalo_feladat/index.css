@@ -23,11 +23,16 @@ body {
   color: var(--szoveg);
   margin: 0;
   padding: 20px;
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 /* Fejléc stílusa */
 header {
-  /*  */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
   /*  */
   /*  */
 }
@@ -44,6 +49,18 @@ header h1 {
   color: var(--kiemeles);
   margin: 0;
 }
+.kiIrasNev{
+  color: var(--masodlagos-kiemeles);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+}
+.kiIrasHp{
+  font-size: 15px;
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+}
 
 /* Fő elrendezés Flexbox-szal */
 main {
@@ -52,10 +69,11 @@ main {
 }
 
 .cards-container {
-  /*  */
-  /*  */
-  /*  */
-  /*  */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* Karakterkártyák stílusa */
@@ -103,12 +121,14 @@ main {
 
 /* Tulajdonságlap */
 .character-sheet {
-  /*  */
+  display: flex;
+  flex-direction: column;
   background-color: var(--tulajdonsaglap-hatter);
   border: 2px solid var(--kiemeles);
   border-radius: 8px;
   padding: 20px;
-  height: fit-content;
+  max-height: 80px;
+  max-width: auto;
 }
 
 .character-sheet h2 {
@@ -121,6 +141,7 @@ main {
   font-size: 10px;
   font-style: italic;
   color: var(--halvany-szoveg);
+  text-align: center;
 }
 
 .character-sheet .char-name,

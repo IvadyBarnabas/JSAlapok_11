@@ -23,7 +23,7 @@ const inditoGomb = document.querySelector("#indito-gomb")
 /* 11. feladat */
 const eredmenyDiv = document.getElementById("eredmeny")
 /* 12-13-14-15-16. feladat */
-inditoGomb.addEventListener("click", () => {
+inditoGomb.addEventListener("click", function() {
   const gombSzoveg = inditoGomb.textContent  
   const jatekosNev = document.getElementById("jatekos-nev-input").value
   eredmenyDiv.textContent = "Üdvözlünk " + jatekosNev + "! " + "Végrehajtott akció: " + gombSzoveg
